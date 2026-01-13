@@ -82,52 +82,52 @@ namespace _07_ForeachLoop
 
             #region Örnek Sınav Sistemi Uygulaması
 
-            Console.Write("********* C# Eğitim Kampı Sınav Uygulama");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
+            //Console.Write("********* C# Eğitim Kampı Sınav Uygulama");
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Console.WriteLine();
  
-            Console.WriteLine("--------------------------");
-            Console.WriteLine("Sıfınızda kaç öğrenci var ");
-            Console.WriteLine();
-            int studentCount=int.Parse(Console.ReadLine());
-            Console.WriteLine("--------------------------");
+            //Console.WriteLine("--------------------------");
+            //Console.WriteLine("Sıfınızda kaç öğrenci var ");
+            //Console.WriteLine();
+            //int studentCount=int.Parse(Console.ReadLine());
+            //Console.WriteLine("--------------------------");
 
-            string[] studentNames = new string[studentCount];
-            double[] studentExamAvg = new double[studentCount];
+            //string[] studentNames = new string[studentCount];
+            //double[] studentExamAvg = new double[studentCount];
 
-            for(int i = 0; i < studentCount; i++)
-            {
-                Console.Write($"{i+1}. öğrencinin ismini giriniz: ");
-                studentNames[i] = Console.ReadLine();
+            //for(int i = 0; i < studentCount; i++)
+            //{
+            //    Console.Write($"{i+1}. öğrencinin ismini giriniz: ");
+            //    studentNames[i] = Console.ReadLine();
 
-                double totalExamResult = 0;
+            //    double totalExamResult = 0;
 
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.Write($"{studentNames[i]} adlı öğrencinin{j + 1}. sınav notunu giriniz");
-                    double value = double.Parse(Console.ReadLine());
-                    totalExamResult += value;
-                }
-                studentExamAvg[i] = totalExamResult / 3;
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.Write($"{studentNames[i]} adlı öğrencinin{j + 1}. sınav notunu giriniz");
+            //        double value = double.Parse(Console.ReadLine());
+            //        totalExamResult += value;
+            //    }
+            //    studentExamAvg[i] = totalExamResult / 3;
 
-                Console.WriteLine();
-            }
-            for(int i = 0;i < studentCount; i++)
-            {
-                Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]}");
-                if (studentExamAvg[i] >= 40)
-                {
-                    Console.WriteLine($"Tebrikler {studentNames[i]} dersten geçtin");
-                }
-                else {
-                    Console.WriteLine($"Maalesef kaldın {studentNames[i]} korkmayın bütte daha yüksek geçircem");
-                }
+            //    Console.WriteLine();
+            //}
+            //for(int i = 0;i < studentCount; i++)
+            //{
+            //    Console.WriteLine($"{studentNames[i]} adlı öğrencinin ortalaması: {studentExamAvg[i]}");
+            //    if (studentExamAvg[i] >= 40)
+            //    {
+            //        Console.WriteLine($"Tebrikler {studentNames[i]} dersten geçtin");
+            //    }
+            //    else {
+            //        Console.WriteLine($"Maalesef kaldın {studentNames[i]} korkmayın bütte daha yüksek geçircem");
+            //    }
 
-                Console.WriteLine("---------------------------------------------------------");
-            }
+            //    Console.WriteLine("---------------------------------------------------------");
+            //}
        
             #endregion
         }
